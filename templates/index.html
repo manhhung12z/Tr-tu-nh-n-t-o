@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Plant Disease Detection</title>
+    <!-- Nhúng Font Awesome qua CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+
+<body>
+    <div class="app">
+        <header class="header">
+            <h1><i class="fa-solid fa-leaf" style="color: #4CAF50;"></i>AI Plant Disease Detection</h1>
+            <p>Upload a leaf image, analyze disease, and get treatment suggestions</p>
+        </header>
+        <main class="container">
+            <section class="left-box">
+                <div class="upload-box">
+                    <input type="file" id="fileInput" accept=".jpg,.jpeg,.png,.mp4,.mov" hidden>
+                    <p><i class="fa-solid fa-upload" style="color: #2196F3;"></i>Click to upload image/video</p>
+                    <span>Supports JPG, PNG, MP4, MOV formats</span>
+                </div>
+                <div class="video-box">
+                    <img src="#" alt="Leaf Image">
+                </div>
+
+                <div class="buttons">
+                    <button class="btn play" id="btnplay"><i class="fa-solid fa-play"></i> Play</button>
+                    <button class="btn red" id ="btnclear"><i class="fa-solid fa-trash"></i> Clear Video</button>
+                </div>
+            </section>
+            <!-- CỘT PHẢI -->
+            <section class="right-box">
+
+                <div class="result-card">
+                    <div class="row">
+                        <span>Loại bệnh:</span>
+                        <p>Chưa có dữ liệu</p>
+                    </div>
+
+                    <div class="row">
+                        <span>Mức độ:</span>
+                        <p>--</p>
+                    </div>
+
+                    <div class="row">
+                        <span>Bộ phận ảnh hưởng:</span>
+                        <p>--</p>
+                    </div>
+
+                    <h3>📌 Dấu hiệu</h3>
+                    <p>Vui lòng tải ảnh hoặc video để bắt đầu nhận diện.</p>
+
+                    <h3>🌿 Giải pháp</h3>
+
+                    <div class="solution">
+                        <h4>Khuyến nghị</h4>
+                        <p>Hệ thống sẽ hiển thị kết quả sau khi phân tích.</p>
+                    </div>
+
+                </div>
+
+            </section>
+        </main>
+
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI"
+        crossorigin="anonymous"></script>
+    <script src="{{ url_for('static', filename='js/jschung.js') }}"></script>
+</body>
+
+</html>

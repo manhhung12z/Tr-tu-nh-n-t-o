@@ -1,0 +1,408 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #071529;
+    color: white;
+}
+
+.header {
+    background: linear-gradient(90deg, #0b6b88, #35d94f);
+    text-align: center;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    position: sticky;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.left-box {
+    background: #0b1d35;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.upload-box {
+    border: 2px dashed #21c37a;
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    color: #d8fff0;
+    cursor: pointer;
+}
+
+.upload-box p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.upload-box span {
+    font-size: 13px;
+    color: #b5c7d8;
+}
+
+.video-box {
+    border: 2px solid #27d67c;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn {
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.green {
+    background: #24c25e;
+}
+
+.play {
+    background: #21c45a;
+}
+
+.red {
+    background: #e51f4f;
+}
+
+.right-box {
+    background: #111c3a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.result-card {
+    background: linear-gradient(180deg, #611f32, #171d35);
+    border-left: 5px solid #e3285b;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+.row span {
+    color: #d0d0d0;
+}
+
+.row b {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.orange {
+    color: #ffb347;
+}
+
+.result-card h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #8cff9c;
+    font-size: 16px;
+}
+
+.result-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.solution {
+    background: rgba(0, 0, 0, 0.25);
+    border-left: 3px solid #32d96b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background: #071529;
+    color: white;
+}
+
+.header {
+    background: linear-gradient(90deg, #0b6b88, #35d94f);
+    text-align: center;
+    padding: 18px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    position: sticky;
+    width: 100%;
+}
+
+.header h1 {
+    font-size: 28px;
+    margin-bottom: 8px;
+}
+
+.header p {
+    font-size: 13px;
+    opacity: 0.9;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+.left-box {
+    background: #0b1d35;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.upload-box {
+    border: 2px dashed #21c37a;
+    border-radius: 8px;
+    text-align: center;
+    padding: 25px;
+    margin-bottom: 20px;
+    color: #d8fff0;
+    cursor: pointer;
+}
+
+.upload-box p {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+.upload-box span {
+    font-size: 13px;
+    color: #b5c7d8;
+}
+
+.video-box {
+    border: 2px solid #27d67c;
+    border-radius: 8px;
+    overflow: hidden;
+    background: #000;
+    max-height: 450px;
+    display: flex;
+    align-items: center;
+    /* căn giữa nội dung theo chiều dọc */
+    justify-content: center;
+    /* căn giữa nội dung theo chiều ngang */
+}
+
+.video-box img,
+.video-box video {
+    width: 100%;
+    height: 100%;
+    max-height: 450px;
+    object-fit: contain;
+
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px;
+    margin-top: 15px;
+}
+
+.btn {
+    border: none;
+    padding: 13px;
+    border-radius: 6px;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.green {
+    background: #24c25e;
+}
+
+.play {
+    background: #21c45a;
+}
+
+.red {
+    background: #e51f4f;
+}
+
+.right-box {
+    background: #111c3a;
+    padding: 15px;
+    border-radius: 8px;
+}
+
+.result-card {
+    background: linear-gradient(180deg, #611f32, #171d35);
+    border-left: 5px solid #e3285b;
+    padding: 18px;
+    border-radius: 6px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    padding: 9px 0;
+    font-size: 13px;
+}
+
+.row span {
+    color: #d0d0d0;
+}
+
+.row b {
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.orange {
+    color: #ffb347;
+}
+
+.result-card h3 {
+    margin-top: 18px;
+    margin-bottom: 8px;
+    color: #8cff9c;
+    font-size: 16px;
+}
+
+.result-card p {
+    font-size: 13px;
+    line-height: 1.5;
+    color: #eeeeee;
+}
+
+.solution {
+    background: rgba(0, 0, 0, 0.25);
+    border-left: 3px solid #32d96b;
+    padding: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+.solution h4 {
+    color: #7cff8b;
+    margin-bottom: 5px;
+    font-size: 14px;
+}
+
+footer {
+    margin-top: 12px;
+    font-size: 13px;
+    color: #7cff8b;
+}
+
+/* các nut button trong desease */
+.timeline-buttons {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    max-height: 120px;
+    overflow-y: auto;
+}
+
+.btn-timeline {
+    background: rgba(255, 255, 255, 0.1);
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 13px;
+    padding: 6px 12px;
+}
+
+.btn-timeline:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.btn-timeline.active {
+    background: #24c25e;
+    border-color: #24c25e;
+    color: #fff;
+    font-weight: bold;
+}
+
+.timeline-container {
+    margin-bottom: 15px;
+    padding-bottom: 15px;
+    border-bottom: 1px dashed rgba(255, 255, 255, 0.2);
+}
+
+/* responsive cho web */
+@media(max-width:992px) {
+    .container {
+        grid-template-columns: 1fr;
+    }
+
+    .header h1 {
+        font-size: 22px;
+    }
+
+}
+
+@media(max-width:576px) {
+    .header {
+        padding: 12px;
+    }
+
+    .header h1 {
+        font-size: 18px;
+    }
+
+    .header p {
+        font-size: 11px;
+    }
+
+    .upload-box {
+        padding: 15px;
+    }
+    .buttons {
+        grid-template-columns: 1fr;  /* nút xếp dọc */
+    }
+    .result-card {
+        padding: 12px;
+    }
+
+
+
+}
