@@ -354,9 +354,6 @@ def predict_video(video_path):
     summary = {}
     for item in detections:
         name = item["disease"]
-        info = DISEASE_INFO.get(name)
-        if name in HEALTHY_CLASSES:
-            info = HEALTHY_INFO
         if name not in summary:
             summary[name] = {
                 "count": 0,
@@ -364,10 +361,14 @@ def predict_video(video_path):
             }
         summary[name]["count"] += 1
         summary[name]["total_confidence"] += item["confidence"]
-        summary_list = []
-        for name,data in summary.items():
-            avg_confidence = round(data["total_confidence"] / data["count"],2)
-            summary_list.append({
+    summary_list = []
+    for name,data in summary.items():
+        if name in HEALTHY_CLASSES:
+            info = HEALTHY_INFO
+        else:
+            info = DISEASE_INFO.get(name, HEALTHY_INFO)
+        avg_confidence = round(data["total_confidence"] / data["count"],2)
+        summary_list.append({
             "disease": name,
             "count": data["count"],
             "avg_confidence": round(avg_confidence, 2),
