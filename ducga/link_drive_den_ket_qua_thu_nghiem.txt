@@ -1,0 +1,5 @@
+resize640_20epoch_aug_mosaic0.5, resize640_20epoch_aug, resize320_20epoch: https://drive.google.com/drive/u/0/folders/1QTdF83X1l4m0lqm6_ISTMbDJLQ0lrPv2 
+
+other_augmentation, resize224_20epoch, resize640_20epoch: https://drive.google.com/drive/folders/1b5fQxTqIhUNR4ohSrrYHnJDAKdjPqmLb?usp=sharing
+
+50_epoch_mix_up-2, 50epoch_fullparams-2(best), resize640_aug_mixup, rz320_aug_new_dataset_50epoch, rz640_aug_new_dataset_50epoch: https://drive.google.com/drive/folders/1t-m3PEd9vNNH-kvwM_JbXCRtaWGQJYkI?usp=sharing
